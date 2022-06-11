@@ -1,3 +1,80 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+header,
+section,
+footer,
+article,
+details {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+
+/* Basic styles, change according to your style */
+
+
 body {
     padding: 50px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -9,17 +86,32 @@ a {
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 6.5rem;
     color: white;
+    margin-bottom: 5vw;
+    font-weight: 600;
 }
 
 h2 {
-    font-size: 3rem;
-    color: white;
+    font-size: 2rem;
+    margin-bottom: 2vw;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1.1rem;
 }
 
 
@@ -33,31 +125,107 @@ h2 {
     height: 90vh;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: row-reverse;
     width: 100%;
 }
 
 .flex-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 7.5vh 7.5vw;
+    width: 40%;
 }
 
-.text-zone {
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
+a.btn-check {
+    color: #00B7FF;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 2vh 2vw;
+    background-color: white;
+    border-radius: 30px;
 }
 
+/* -------------movies.hbs-------------*/
 
-/*
-.text-zone {
+.introduction-page {
+    padding: 1vh 5vw;
+}
+
+.movies-section {
+    padding: 4vh 2vw;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+
+.movie {
+    margin: 3vh 1vw;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    padding-right: 10vw;
-    padding-top: 45vh;
-} */
+    align-items: center;
+    text-align: center;
+}
+
+.movie-bottom {
+    padding: 2vh 2vw;
+    white-space: pre-line;
+}
+
+.movie-bottom a {
+    text-decoration: underline;
+
+} 
+
+img.movie-img {
+    width: 15vw;
+} 
+
+/* -------------movie.hbs-------------*/
+
+.container-movie {
+    display: flex;
+    flex-direction: row;
+}
+
+.section-right-movie-img {
+    padding: 2vh 4vw;
+    margin-left: 2vw;
+}
+
+.section-left-movie-img {
+    padding: 2vh 1vw;
+}
+
+.container-movie h3 {
+    font-size: 1.4rem;
+    padding: 2vh 0vw;
+    font-weight: 600;
+}
+
+.container-movie h4 {
+    padding: 2vh 0vw;
+    font-weight: 600;
+}
+
+.container-movie h5 {
+    padding: 2vh 0vw;
+    font-weight: 600;
+}
+
+ul.stars-sect {
+    padding: 2vh 0vw;
+}
+
+p.sinopsis {
+    padding: 2vh 0vw;
+    font-size: 0.8rem;
+    width: 70%;
+}
+
+.section-left-movie-img img {
+    width: 260px;
+}
+
+ul.time-sect {
+    padding: 2vh 0vw;
+}
